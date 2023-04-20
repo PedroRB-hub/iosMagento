@@ -4,10 +4,42 @@
   margin: 0;
   padding: 0;
 }
+
+:root,
+:root.light {
+  --background-1: #EC4503;
+  --background-2: #F9F2EB;
+  --text-color1: #ec4503;
+  --text-color2: #020202;
+}
+
 body {
   background-color: #EC4503;
   font-family: 'Montserrat', sans-serif;
 }
+
+header {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header h1 {
+  text-align: center;
+  color: #F9F2EB;
+}
+
+header a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+a:visited {
+  color: #F9F2EB;
+}
+
 .secao1 {
   display: flex;
   justify-content: space-around;
@@ -15,13 +47,14 @@ body {
   background-color: #F9F2EB;
   padding: 14px;
   flex-direction: row-reverse;
-  
 }
+
 .secao1-texto {
   /* margin: 10px 0px 0px 0px; */
   padding: 20px;
 }
-.secao1-texto p{
+
+.secao1-texto p {
   margin: 18px;
   text-align: justify;
   font-size: 1.4rem;
@@ -29,6 +62,7 @@ body {
   font-weight: 400;
   line-height: 30px;
 }
+
 .secao1-texto h2 {
   font-size: 2rem;
   margin: 24px;
@@ -36,61 +70,66 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
+
 .secao2 {
   padding: 20px;
   color: #F9F2EB;
-
 }
+
 .secao2 h2 {
   text-align: center;
 }
+
 .secao2-texto {
-  text-align: justify;  
+  text-align: justify;
   /* margin: 10px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+
 .secao2-texto p {
   margin: 14px;
   font-size: 1.3rem;
   line-height: 34px;
 }
+
 .secao3 {
   background-color: #F9F2EB;
-  /* padding: 20px; */
 }
+
 .secao3 h2 {
   text-align: center;
   padding: 20px;
 }
+
 .secao3-conteudo {
   display: flex;
   justify-content: center;
   /* gap: 20px; */
 }
+
 .secao3-texto {
   font-size: 1.2rem;
   align-self: center;
   padding: 20px;
 }
+
 .secao3-texto p {
   text-align: justify;
   margin-bottom: 12px;
 }
-.secao3-texto li{
+
+.secao3-texto li {
   list-style: none;
   font-size: 1.1rem;
   margin: 5px;
-
 }
+
 i {
   color: #EC4503;
 }
-.secao3-texto p {
-  /* margin: 5px; */
 
-}
 .secao4 {
   background-color: #EC4503;
 }
@@ -105,9 +144,28 @@ i {
   font-size: 1.3rem;
   line-height: 34px;
 }
+
 .secao4-texto p {
-margin: 20px;
+  margin: 20px;
 }
+
 .secao4-conteudo img {
-margin: 0px auto;
+  margin: 0px auto;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EACDC9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(230, 143, 129, 40);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B36E64;
 }
