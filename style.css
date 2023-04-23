@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
-* {
+*
+{
   margin: 0;
   padding: 0;
-}
+} 
 
-:root,
-:root.light {
+:root {
   --background-1: #EC4503;
   --background-2: #F9F2EB;
-  --text-color1: #ec4503;
+  --text-color1: #F9F2EB;
   --text-color2: #020202;
+  --text-color3: #EC4503;
 }
 
+
 body {
-  background-color: #EC4503;
+  background-color: var(--background-1);
   font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  margin: 0px auto;
 }
+
 
 header {
   height: 70px;
@@ -27,24 +31,25 @@ header {
 
 header h1 {
   text-align: center;
-  color: #F9F2EB;
+  color: var(--text-color1);
 }
 
 header a {
   text-decoration: none;
   text-align: center;
   font-size: 1rem;
+  color: var(--text-color1);
 }
 
 a:visited {
-  color: #F9F2EB;
+  color: var(--text-color1);
 }
 
 .secao1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #F9F2EB;
+  background-color: var(--text-color1);
   padding: 14px;
   flex-direction: row-reverse;
 }
@@ -73,7 +78,7 @@ a:visited {
 
 .secao2 {
   padding: 20px;
-  color: #F9F2EB;
+  color: var(--text-color1);
 }
 
 .secao2 h2 {
@@ -95,7 +100,7 @@ a:visited {
 }
 
 .secao3 {
-  background-color: #F9F2EB;
+  background-color: var(--background-2);
 }
 
 .secao3 h2 {
@@ -127,11 +132,11 @@ a:visited {
 }
 
 i {
-  color: #EC4503;
+  color: var(--text-color3);
 }
 
 .secao4 {
-  background-color: #EC4503;
+  background-color: var(--background-1);
 }
 
 .secao4-texto {
@@ -139,7 +144,7 @@ i {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-template-rows: 300px;
-  color: #F9F2EB;
+  color: var(--text-color1);
   text-align: justify;
   font-size: 1.3rem;
   line-height: 34px;
@@ -168,4 +173,52 @@ i {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #B36E64;
+}
+footer {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  background-color: #F9F2EB;
+}
+
+.dese {
+  padding-top: 10px;
+}
+
+.gabr {
+  color: #EC4503;
+  ;
+}
+
+.social {
+  text-align: center;
+  color: #333;
+}
+
+.social i {
+  align-items: center;
+  font-size: 30px;
+  color: #333;
+
+}
+
+i {
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+
+i:hover {
+  color: #EC4503;
+}
+
+.dir {
+  width: 100%;
+  background-color: #EC4503;
+  ;
+  color: #ddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
 }
