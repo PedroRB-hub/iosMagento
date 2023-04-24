@@ -17,7 +17,6 @@
 body {
   background-color: var(--background-1);
   font-family: 'Montserrat', sans-serif;
-  max-width: 1200px;
   margin: 0px auto;
 }
 
